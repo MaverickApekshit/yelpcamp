@@ -14,7 +14,7 @@ app.get("/campgrounds", function(req, res){
 		{name: "Mountain Goat's Rest", image: "https://cdn.vox-cdn.com/thumbor/1j72cfH6ka3baNiIvbstiHQbnfo=/0x0:5225x3479/920x613/filters:focal(2195x1322:3031x2158):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/54137643/camping_tents.0.jpg"}
 	]
 
-	res.render("campgrounds");
+	res.render("campgrounds", {campgrounds:campgrounds});
 });
 
 app.listen(3000, '127.0.0.1', function(){
